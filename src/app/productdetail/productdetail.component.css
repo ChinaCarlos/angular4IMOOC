@@ -1,0 +1,107 @@
+.product_detail{
+
+}
+.commentTitle{
+  width:100%;
+  height:50px;
+  background: #eee;
+  margin:30px auto;
+  margin-bottom: 0px;
+
+  font-family: "DejaVu Sans Mono";
+  text-align: center;
+  line-height: 50px;
+  font-size:25px;
+  border-bottom:2px solid white;
+}
+.product_detail .product_detail_Introduction{
+  display: block;
+  width:100%;
+  min-height:120px;
+
+  margin-bottom:20px;
+}
+.product_detail .product_detail_Introduction .productIntroduction{
+  font-family: "DejaVu Sans Mono";
+  padding:0px;
+  padding-left:10px;
+  padding-top:10px;
+
+
+  margin:0px;
+
+}
+.product_detail .product_detail_Introduction .introductionText{
+  padding-left:30px;
+  padding-top:10px;
+  font-family: "DejaVu Sans Mono";
+  font-size: 14px;
+
+}
+.productScore .right{
+  width:50%;
+  display: block;
+  float: right;
+  padding-right:20px;
+}
+
+.rightPrice{
+  float: right;
+  padding-right:30px;
+  color:red;
+}
+.commentTitle .left{
+
+  display: block;
+  float: left;
+  padding-left:20px;
+  margin:auto 20px;
+}
+.commentTitle .right{
+  margin-top: 10px;
+  display: block;
+  float: right;
+  margin-right:20px;
+
+}
+.addComment{
+  wdith:100%;
+  height:150px;
+  background:#eee;
+}
+.editComment{
+  display: block;
+  width:90%;
+  height:65px;
+  margin-left:5%;
+  margin-top:-10px;
+
+
+}
+.editComment textarea{
+  width:100%;
+  height:100%;
+  outline: none;
+  border:none;
+  background:rgba(0,0,0,0.5);
+  margin:0px;
+  padding:0px;
+  color:white;
+}
+.leave{
+  display: block;
+  width:90%;
+  margin-left:5%;
+  padding-top:5px;
+
+}
+.submitComment>button{
+  float: right;
+  margin-right:5%;
+  margin-top:10px;
+}
+.one{
+  display: inline-block;
+
+}
+

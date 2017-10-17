@@ -1,0 +1,10 @@
+<div class="comment">
+
+
+   <div *ngFor="let comment of comments" class="comment_item">
+
+     <p class="comment_block"><span class="left">用户名：{{comment.user}}</span><span class="right">时间：{{comment.times}}</span></p>
+     <p class="comment_block">留言内容：{{comment.content}}</p>
+     <p class="comment_block"><span class="right"><app-stars [rating]="comment.satrs"></app-stars></span><span class="right">参考等级：</span></p>
+   </div>
+</div>

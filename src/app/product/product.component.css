@@ -1,0 +1,51 @@
+.thumbnail img{
+
+}
+.thumbnail {
+  margin-top:0px;
+}
+.productName{
+  padding-left:20px;
+}
+.productIntroduction{
+  padding-bottom:0px;
+  margin-bottom:0px;
+  color:black;
+  font-weight:bolder;
+}
+.introductionText{
+  font-size:12px;
+  padding-left:10px;
+
+}
+.productPrice{
+  text-align:center;
+  padding-top:10px;
+  color:red;
+  font-weight:bolder;
+}
+.productScore{
+  display:inline-block;
+  width:100%;
+  height:30px;
+
+
+  padding-top:10px;
+  color:black;
+  font-weight:bolder;
+
+}
+.wacthProduction{
+  margin-top:20px;
+  text-align:center;
+}
+.productScore .left{
+
+  display: block;
+  float: left;
+  padding-left:10px;
+}
+.searchProduct{
+  margin-top:20px;
+  margin-bottom:0px;
+}

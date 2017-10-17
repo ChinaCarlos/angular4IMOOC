@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-xs-12  searchProduct" >
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="搜索商品" [formControl]="titleFilter" >
+    </div>
+  </div>
+  <div *ngFor="let product of products | async |filter:'title':keywords "class="col-xs-6 col-md-3">
+    <div class="thumbnail">
+      <img [src]="product.imgUrl" alt="...">
+      <div class="caption">
+        <p>
+          <span class="PrName">商品名称：</span>
+          <span class="productName">{{product.title}}</span>
+        </p>
+        <p class="productIntroduction">简介：</p>
+        <span class="introductionText">
+          {{product.introduction}}
+        </span>
+        <p class="productPrice">价格：{{product.price}} RMB</p>
+        <span class="productScore"><span class="left">讨论热度：</span><span class="right"><app-stars [rating]="product.stars"></app-stars></span></span>
+        <p class="wacthProduction"><a href="#" class="btn btn-danger" role="button" [routerLink]="['/product']" [queryParams]="{productId:product.id}">查看详情</a></p>
+      </div>
+    </div>
+  </div>
+</div>

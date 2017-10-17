@@ -1,0 +1,43 @@
+<div class="product_detail">
+
+  <img [src]="product?.imgUrl">
+
+  <h4>
+    <p>
+      <span class="PrName">商品名称：</span>
+      <span class="productName">{{product?.title}}</span>
+    <span class="productPrice rightPrice">价格：{{product?.price}} RMB</span>
+    </p>
+    <span class="product_detail_Introduction">
+        <p class="productIntroduction">商品简介：</p>
+        <span class="introductionText">
+              {{product?.introduction}}
+            </span>
+    </span>
+
+
+  </h4>
+  <div class="commentTitle">
+     <div class="left">
+       用户评论专区
+     </div>
+    <div>
+      <button class="btn right btn-danger" (click)="OnWacth($event)" >{{!isWatch?"关注":"取消关注"}}</button><span style="font-size:14px;">商品当前价格：{{currentPrice}}</span>
+      <button class="btn right btn-success" (click)="isAddCommentArea=!isAddCommentArea">发表评论</button>
+    </div>
+
+  </div>
+  <div class="addComment"[hidden]="isAddCommentArea">
+      <p  class="leave"><span class="one">参考等级:&nbsp;&nbsp;</span><span class="one"><app-stars (clickRating)="getRating($event)" [rating]="clickRating"></app-stars></span></p>
+
+      <div class="editComment">
+        <textarea name="" id="" [(ngModel)]="commentContent" >
+
+        </textarea>
+      </div>
+    <div class="submitComment">
+      <button class="btn btn-danger" (click)="submitComment()">提交</button>
+    </div>
+  </div>
+ <app-comment [comments]="comments"></app-comment>
+</div>
